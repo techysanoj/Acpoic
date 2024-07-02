@@ -1,0 +1,62 @@
+/* src/components/HeroSection.css */
+
+.hero-section {
+  background-image: url('/Users/priyanshubhardwaj/Downloads/doctorphoto.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: left;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  color: #fff;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 2rem;
+}
+.doctor-logo {
+  width: 100px; 
+  margin-bottom: 1rem; 
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.appointment-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.appointment-button:hover {
+  background-color: #0056b3;
+}
+
+.terms {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,63 @@
+.card-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    padding: 16px;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    max-width: 250px; /* Adjust the width as needed */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .c-img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+    object-fit:scale-down;
+    background-color: #f6f6fe;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .c-h2, .c-p, .c-h3 {
+    text-align: left; /* Ensure text alignment to the left */
+    margin: 0; /* Reset margin to prevent unintended spacing */
+  }
+  
+  .c-h2 {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .c-p {
+    color: gray;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .c-p-a {
+    font-size: 18px;
+    color: #007bff;
+  }
+
+.card-main:hover {
+  background-color: #386df1;
+  box-shadow: 2px 2px 5px #386df1;
+  transition: 1s background-color, box-shadow;
+
+}
+
+.card-main:hover p{
+  color: white;
+  cursor: pointer;
+}
+.card-main:hover h2{
+  color: white;
+}
+.card-main:hover img{
+  background-color: transparent;
+  border: 0px;
+}

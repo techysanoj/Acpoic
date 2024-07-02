@@ -1,0 +1,20 @@
+/* src/App.css */
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  min-height: 100vh; /* Ensure the App component takes the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  background-image: url('/Users/priyanshubhardwaj/Downloads/doctorphoto.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+
+  /* Styles from #root */
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}

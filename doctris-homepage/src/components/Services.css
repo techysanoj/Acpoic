@@ -1,0 +1,31 @@
+.os-main{
+    height: 700px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.os-header{
+    margin-bottom: 50px;
+    width: 50rem;
+}
+
+.os-ht{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.os-pt{
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.d-services{
+    display: flex;
+    flex-direction: row;
+}

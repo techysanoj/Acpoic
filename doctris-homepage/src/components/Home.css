@@ -1,0 +1,111 @@
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Background color to match the provided image */
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff; /* Background color for content box */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px; /* Add space between sections */
+  margin-top: 40px; /* Shift the content down */
+}
+
+.image-section {
+  position: relative;
+  margin-right: 40px;
+}
+
+.main-image {
+  width: 200px; /* Adjust size as necessary */
+  height: auto;
+}
+
+.overlay-image {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100px; /* Adjust size as necessary */
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #ffffff; /* White border around the image */
+}
+
+.small-image {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 100px; /* Adjust size as necessary */
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #ffffff; /* White border around the image */
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.play-icon {
+  font-size: 24px;
+  color: #000000; /* Adjust color if necessary */
+}
+
+.text-section {
+  max-width: 600px; /* Adjust width as necessary */
+}
+
+.text-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.read-more-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.read-more-button:hover {
+  background-color: #0056b3;
+}
+
+.below-content {
+  width: 100%;
+}
+
+.os-main,
+.dc-main {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
