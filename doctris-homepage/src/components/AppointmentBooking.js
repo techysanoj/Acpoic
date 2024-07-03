@@ -1,28 +1,26 @@
 import React, { useState } from 'react';
-import './AppointmentBooking.css'; // Import CSS for styling
+import './AppointmentBooking.css';
 
 const AppointmentBooking = () => {
-  const [selectedDate, setSelectedDate] = useState('');
-  const [selectedTime, setSelectedTime] = useState('');
-  const [selectedDoctor, setSelectedDoctor] = useState('');
+  const [appointmentDetails, setAppointmentDetails] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    date: '',
+    time: '',
+    doctor: '',
+  });
 
-  const handleDateChange = (event) => {
-    setSelectedDate(event.target.value);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setAppointmentDetails({ ...appointmentDetails, [name]: value });
   };
 
-  const handleTimeChange = (event) => {
-    setSelectedTime(event.target.value);
-  };
-
-  const handleDoctorChange = (event) => {
-    setSelectedDoctor(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission, e.g., send booking request to server
-    console.log(`Appointment booked for ${selectedDate} at ${selectedTime} with ${selectedDoctor}`);
-    // You can redirect user or show a confirmation message here
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle appointment booking logic here
+    console.log('Appointment Details:', appointmentDetails);
+    alert('Appointment booked successfully!');
   };
 
   return (
@@ -30,26 +28,73 @@ const AppointmentBooking = () => {
       <h2>Book an Appointment</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label>Select Date:</label>
-          <input type="date" value={selectedDate} onChange={handleDateChange} required />
+          <label>Name:</label>
+          <input
+            type="text"
+            name="name"
+            value={appointmentDetails.name}
+            onChange={handleChange}
+            required
+          />
         </div>
         <div className="form-group">
-          <label>Select Time:</label>
-          <input type="time" value={selectedTime} onChange={handleTimeChange} required />
+          <label>Email:</label>
+          <input
+            type="email"
+            name="email"
+            value={appointmentDetails.email}
+            onChange={handleChange}
+            required
+          />
         </div>
         <div className="form-group">
-          <label>Select Doctor:</label>
-          <select value={selectedDoctor} onChange={handleDoctorChange} required>
-            <option value="">Select Doctor</option>
+          <label>Phone:</label>
+          <input
+            type="tel"
+            name="phone"
+            value={appointmentDetails.phone}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label>Date:</label>
+          <input
+            type="date"
+            name="date"
+            value={appointmentDetails.date}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label>Time:</label>
+          <input
+            type="time"
+            name="time"
+            value={appointmentDetails.time}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label>Doctor:</label>
+          <select
+            name="doctor"
+            value={appointmentDetails.doctor}
+            onChange={handleChange}
+            required
+          >
+            <option value="" disabled>Select a Doctor</option>
             <option value="Dr. Smith">Dr. Smith</option>
             <option value="Dr. Johnson">Dr. Johnson</option>
             <option value="Dr. Brown">Dr. Brown</option>
           </select>
         </div>
-        <button type="submit" className="book-appointment-button">Book Appointment</button>
+        <button type="submit" className="submit-button">Book Appointment</button>
       </form>
     </div>
   );
-}
+};
 
 export default AppointmentBooking;
