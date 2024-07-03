@@ -1,0 +1,12 @@
+
+/* src/components/AppointmentsSection.css */
+
+.appointments-section {
+  display: flex;
+  /* justify-content: space-around; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}

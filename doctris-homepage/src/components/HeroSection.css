@@ -1,7 +1,7 @@
 /* src/components/HeroSection.css */
 
 .hero-section {
-  background-image: url('/Users/priyanshubhardwaj/Downloads/doctorphoto.jpeg');
+  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.peakpx.com%2Fen%2Fhd-wallpaper-desktop-awiur&psig=AOvVaw0mfDLefpXNBixGtfpiim0k&ust=1720094517277000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCMCM-8jpiocDFQAAAAAdAAAAABAJ');
   background-size: cover;
   background-position: center;
   height: 100vh; /* Full viewport height */

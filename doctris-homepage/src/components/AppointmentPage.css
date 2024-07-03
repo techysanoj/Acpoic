@@ -1,0 +1,99 @@
+/* src/components/AppointmentPage.css */
+
+.appointment-page {
+    padding: 20px;
+  }
+  
+  .appointment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .appointment-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .appointment-actions button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .appointment-actions button.appointment-button {
+    background-color: #28a745;
+  }
+  
+  .appointment-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .appointment-table th,
+  .appointment-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .appointment-table th {
+    background-color: #f8f9fa;
+  }
+  
+  .appointment-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .appointment-actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .appointment-actions .view-button {
+    color: #007bff;
+  }
+  
+  .appointment-actions .edit-button {
+    color: #ffc107;
+  }
+  
+  .appointment-actions .delete-button {
+    color: #dc3545;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-buttons {
+    display: flex;
+  }
+  
+  .pagination-buttons button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .pagination-buttons button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  

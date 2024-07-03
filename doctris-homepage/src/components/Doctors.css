@@ -1,0 +1,8 @@
+.doctors-section{
+    margin-top: 100px;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: row;
+}

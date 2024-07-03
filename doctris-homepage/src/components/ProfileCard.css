@@ -1,0 +1,72 @@
+/* src/components/ProfileCard.css */
+
+.profile-card {
+    margin: 20px;
+    width: 300px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* height: auto; */
+  }
+  
+  .profile-header {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .profile-info {
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .profile-info p {
+    color: #888;
+    margin: 5px 0;
+  }
+  
+  .profile-nav {
+    border-radius: 2px solid black;
+    padding: 20px;
+  }
+  
+  .profile-nav ul {
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .profile-nav ul li {
+    /* height: auto; */
+    margin-bottom: 0;
+  }
+  
+  .profile-nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+  .profile-nav ul li a:hover {
+    color: #007bff;
+  }
+  
